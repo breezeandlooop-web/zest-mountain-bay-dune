@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Breeze & Loop Owner OS",
+      "hasCanvas": false,
+      "bodyTextLen": 1183,
+      "bodyTextHash": "9b45106b3b9d103e6a135ddac0f27f0d026db3d9daa591b828047d6af3b15f1a",
+      "bodyTextPrefix": "Breeze & Loop OWNER OS Home Make Stock Content Money August 2026",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Breeze & Loop Owner OS",
+      "hasCanvas": false,
+      "bodyTextLen": 1162,
+      "bodyTextHash": "bd2bf858cccc8d8fd3a24832647368bdb05193bba39f0f63d17328d2ab3dec7a",
+      "bodyTextPrefix": "Breeze & Loop Saturday, 29 August HOME Good evening, Arlette. Sa",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

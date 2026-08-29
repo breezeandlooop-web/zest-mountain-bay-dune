@@ -1,0 +1,1 @@
+import{V as e,z as t}from"./format-Hxqezae6.js";import{t as n}from"./useRouter-DBy-MArA.js";var r=e(t(),1);function i(e){let t=n();return r.useCallback(n=>t.navigate({...n,from:n.from??e?.from}),[e?.from,t])}export{i as t};

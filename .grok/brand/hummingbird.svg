@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <!-- Caribbean streamertail — refined silhouette -->
+  <g fill="#1A2744">
+    <!-- pointed hover wing -->
+    <path d="M176 88
+      C 128 42, 82 14, 34 12
+      C 56 26, 90 52, 122 86
+      C 140 106, 158 112, 174 106
+      C 176 98, 176 92, 176 88 Z"/>
+    <!-- slimmer head + body -->
+    <path d="M218 82
+      C 210 66, 190 62, 176 74
+      C 160 72, 146 84, 140 104
+      C 136 122, 150 142, 174 144
+      C 196 146, 216 132, 220 110
+      C 224 96, 224 88, 218 82 Z"/>
+    <!-- upper streamer: long thin ribbon -->
+    <path d="M144 122
+      C 84 126, 38 114, 4 98
+      C 36 118, 86 134, 146 130
+      Z"/>
+    <!-- lower streamer: long thin ribbon -->
+    <path d="M150 134
+      C 112 174, 86 210, 66 234
+      C 74 216, 118 176, 154 144
+      Z"/>
+  </g>
+  <path fill="#C26A56" d="M214 80 L308 62 L214 96 Z"/>
+  <path fill="#4F8B78" d="M198 98 C 186 116, 166 124, 148 116 C 164 104, 184 96, 198 98 Z"/>
+</svg>

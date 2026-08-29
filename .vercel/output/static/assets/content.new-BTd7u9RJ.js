@@ -1,0 +1,1 @@
+import{R as e,l as t}from"./format-Hxqezae6.js";import{t as n}from"./content-form-C2bNwDj1.js";import{t as r}from"./useNavigate-AYz8BMyF.js";import{t as i}from"./factories-CC1y9X-E.js";var a=e();function o(){let e=t(e=>e.upsertContent),o=r();return(0,a.jsx)(n,{item:i(),isNew:!0,onSave:t=>{e(t),o({to:`/content/$contentId`,params:{contentId:t.id}})}})}export{o as component};

@@ -1,0 +1,1 @@
+import{R as e,l as t}from"./format-Hxqezae6.js";import{t as n}from"./useNavigate-AYz8BMyF.js";import{n as r}from"./factories-CC1y9X-E.js";import{t as i}from"./material-form-Ditpx-Uk.js";var a=e();function o(){let e=t(e=>e.upsertMaterial),o=n();return(0,a.jsx)(i,{material:r(),isNew:!0,onSave:t=>{e(t),o({to:`/stock/$materialId`,params:{materialId:t.id}})}})}export{o as component};

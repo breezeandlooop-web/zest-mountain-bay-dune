@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
 import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
@@ -8,6 +9,11 @@ import appCss from "../styles.css?url";
 const APP_NAME = "Breeze & Loop Owner OS";
 
 export const Route = createRootRoute({
+  // This Owner OS is intentionally browser-local: its data lives in localStorage.
+  // Keep the document shell on the server, but render the interactive app only
+  // after the browser is available.
+  ssr: false,
+  shellComponent: RootShell,
   head: () => ({
     meta: [
       { charSet: "utf-8" },
@@ -35,27 +41,35 @@ export const Route = createRootRoute({
   component: Root,
 });
 
-function Root() {
+function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="antialiased" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
       <body>
-        <PreviewHostBridge />
-        <AuthProvider>
-          <AppShell>
-            <Outlet />
-          </AppShell>
-          <Toaster
-            position="top-center"
-            toastOptions={{
-              className: "font-sans bg-paper text-navy shadow-card border-0",
-            }}
-          />
-        </AuthProvider>
+        {children}
         <Scripts />
       </body>
     </html>
+  );
+}
+
+function Root() {
+  return (
+    <>
+      <PreviewHostBridge />
+      <AuthProvider>
+        <AppShell>
+          <Outlet />
+        </AppShell>
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            className: "font-sans bg-paper text-navy shadow-card border-0",
+          }}
+        />
+      </AuthProvider>
+    </>
   );
 }
